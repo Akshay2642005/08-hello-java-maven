@@ -13,7 +13,7 @@ A simple Java HelloWorld application built with Maven and executed via Jenkins.
 ## 📂 Project Structure
 ```
 hello-java-maven/
- ├── src/main/java/HelloWorld.java
+ ├── src/main/java/com/example/HelloWorld.java
  └── pom.xml
 ```
 
