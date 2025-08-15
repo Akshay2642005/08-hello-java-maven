@@ -20,4 +20,6 @@ hello-java-maven/
 ## ✅ Output
 ```
 Hello, Jenkins + Maven!
-```
+
+## Screenshots
+ bb![DashBoard Screenshot](screenshots/dashboard.png)
