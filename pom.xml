@@ -3,8 +3,10 @@
     <groupId>com.example</groupId>
     <artifactId>hello</artifactId>
     <version>1.0</version>
+
     <build>
         <plugins>
+            <!-- Compile Java 8 code -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -14,6 +16,22 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
+            <!-- Add Main-Class to manifest -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.example.HelloWorld</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
+
